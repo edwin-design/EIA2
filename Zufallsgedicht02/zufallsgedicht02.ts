@@ -19,14 +19,15 @@ namespace zufallsGedicht {
         let randomPraedikat: number = Math.floor(Math.random() * _praedikatstelle.length);
         let randomObjekt: number = Math.floor(Math.random() * _objektstelle.length);
 
-        verse += subjekt.splice(randomSubjekt, 1) + " ";
-        verse += praedikat.splice(randomPraedikat, 1) + " ";
-        verse += objekt.splice(randomObjekt, 1) + " ";
+        verse += subjekt.splice(randomSubjekt, 1)[0] + " ";
+        verse += praedikat.splice(randomPraedikat, 1)[0] + " ";
+        verse += objekt.splice(randomObjekt, 1)[0] + " ";
 
         return (verse);
     }
 
 }
+
 
 
 
