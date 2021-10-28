@@ -1,0 +1,11 @@
+#div0, #div1 {
+    margin: 50px;
+    margin-left: 150px;
+    margin-top: 5%;
+    height: 500px;
+    width: 700px;
+    position: relative;
+    float: left;
+    border: solid;
+    border-color: blue;
+} 
