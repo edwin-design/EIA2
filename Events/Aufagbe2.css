@@ -9,3 +9,10 @@
     border: solid;
     border-color: blue;
 } 
+
+span {
+    position: fixed;
+    background-color: lightseagreen;
+    width: 300px;
+    height: 60px;
+}
