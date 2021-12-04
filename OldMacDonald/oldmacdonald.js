@@ -3,13 +3,13 @@
 var oldmacdonald;
 (function (oldmacdonald) {
     class Animal {
-        constructor(a, n, s, t, r, f) {
-            this.animalType = a;
-            this.name = n;
-            this.sound = s;
-            this.foodType = t;
-            this.foodRation = r;
-            this.foodAmount = f;
+        constructor(_a, _n, _s, _t, _r, _f) {
+            this.animalType = _a;
+            this.name = _n;
+            this.sound = _s;
+            this.foodType = _t;
+            this.foodRation = _r;
+            this.foodAmount = _f;
         }
         format() {
             return `The ${this.animalType} named ${this.name} sings ${this.sound}, and eats ${this.foodRation} Kg of ${this.foodType}. ${this.foodAmount} Kg of ${this.foodType} are left.`;

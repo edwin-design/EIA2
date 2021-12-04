@@ -10,13 +10,13 @@ class Animal {
     foodRation: number;
     foodAmount: number;
 
-    constructor(a: string, n: string, s: string, t: string, r: number, f: number) {
-        this.animalType = a;
-        this.name = n;
-        this.sound = s;
-        this.foodType = t;
-        this.foodRation = r;
-        this.foodAmount = f;
+    constructor(_a: string, _n: string, _s: string, _t: string, _r: number, _f: number) {
+        this.animalType = _a;
+        this.name = _n;
+        this.sound = _s;
+        this.foodType = _t;
+        this.foodRation = _r;
+        this.foodAmount = _f;
     }
    format(){
         return `The ${this.animalType} named ${this.name} sings ${this.sound}, and eats ${this.foodRation} Kg of ${this.foodType}. ${this.foodAmount} Kg of ${this.foodType} are left.`; 
