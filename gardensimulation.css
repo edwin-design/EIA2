@@ -1,7 +1,7 @@
 body, html {
     margin: 0px;
     height: 100%;
-    background-color: rgb(192, 223, 144);
+    background-color: rgb(96, 146, 94);
     overflow: hidden;
 }
 
@@ -16,7 +16,6 @@ form {
 }
 
 form p {
-    font-style: italic;
     margin-top: 0px;
 }
 
@@ -38,7 +37,7 @@ canvas {
 
 #shop {
     position: absolute;
-    background-color: rgb(255, 255, 238);
+    background-color: rgb(131, 131, 131);
     top: 250px;
     right: 50px;
     width: 300px;
@@ -47,7 +46,7 @@ canvas {
 
 #prices {
     position: absolute;
-    background-color: rgb(255, 255, 238);
+    background-color: rgb(131, 131, 131);
     top: 550px;
     right: 1485px;
     width: 150px;
@@ -56,7 +55,7 @@ canvas {
 
 #inventory {
     position: absolute;
-    background-color: rgb(255, 255, 238);
+    background-color: rgb(131, 131, 131);
     top: 250px;
     right: 1485px;
     width: 150px;

@@ -18,7 +18,7 @@ namespace GardenSimulation {
                     case TASK.PLANTSEED1:
                         if (this.empty == true && Player.money > 0) {
                             console.log("seed 1");
-                            plantsAll.push(new Plant("seed1", "rgb(00, 250, 00)", this.row, this.column, 10, 5));
+                            plantsAll.push(new Plant("seed1", "rgb(0, 250, 10)", this.row, this.column, 10, 5));
                             this.plant = plantsAll[plantsAll.length - 1];
                             this.empty = false;
                             Player.money --;
@@ -31,7 +31,7 @@ namespace GardenSimulation {
                     case TASK.PLANTSEED2:
                         if (this.empty == true && Player.money > 0) {
                             console.log("seed 2");
-                            plantsAll.push(new Plant("seed2", "rgb(00, 200, 00)", this.row, this.column, 20, 4));
+                            plantsAll.push(new Plant("seed2", "rgb(0, 200, 0)", this.row, this.column, 20, 4));
                             this.plant = plantsAll[plantsAll.length - 1];
                             this.empty = false;
                             Player.money --;
@@ -44,7 +44,7 @@ namespace GardenSimulation {
                     case TASK.PLANTSEED3:
                         if (this.empty == true && Player.money > 0) {
                             console.log("seed 3");
-                            plantsAll.push(new Plant("seed3", "rgb(00, 150, 00)", this.row, this.column, 30, 3));
+                            plantsAll.push(new Plant("seed3", "rgb(0, 150, 0)", this.row, this.column, 30, 3));
                             this.plant = plantsAll[plantsAll.length - 1];
                             this.empty = false;
                             Player.money --;
@@ -70,7 +70,7 @@ namespace GardenSimulation {
                     case TASK.PLANTSEED5:
                         if (this.empty == true && Player.money > 0) {
                             console.log("seed 5");
-                            plantsAll.push(new Plant("seed5", "rgb(00, 50, 00)", this.row, this.column, 15, 1));
+                            plantsAll.push(new Plant("seed5", "rgb(0, 50, 0)", this.row, this.column, 15, 1));
                             this.plant = plantsAll[plantsAll.length - 1];
                             this.empty = false;
                             Player.money --;
@@ -86,7 +86,7 @@ namespace GardenSimulation {
                             plantsAll.splice(plantsAll.findIndex((e) => e == this.plant), 1);
                             this.empty = true;
                             this.plant.price = 3; 
-                            if (this.plant.age == this.plant.finalAge) {
+                            if (this.plant.age == this.plant.maxAge) {
                                 Player.money = Player.money + this.plant.price;
                                 
                             }

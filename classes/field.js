@@ -14,7 +14,7 @@ var GardenSimulation;
                     case GardenSimulation.TASK.PLANTSEED1:
                         if (this.empty == true && GardenSimulation.Player.money > 0) {
                             console.log("seed 1");
-                            GardenSimulation.plantsAll.push(new GardenSimulation.Plant("seed1", "rgb(00, 250, 00)", this.row, this.column, 10, 5));
+                            GardenSimulation.plantsAll.push(new GardenSimulation.Plant("seed1", "rgb(0, 250, 10)", this.row, this.column, 10, 5));
                             this.plant = GardenSimulation.plantsAll[GardenSimulation.plantsAll.length - 1];
                             this.empty = false;
                             GardenSimulation.Player.money--;
@@ -26,7 +26,7 @@ var GardenSimulation;
                     case GardenSimulation.TASK.PLANTSEED2:
                         if (this.empty == true && GardenSimulation.Player.money > 0) {
                             console.log("seed 2");
-                            GardenSimulation.plantsAll.push(new GardenSimulation.Plant("seed2", "rgb(00, 200, 00)", this.row, this.column, 20, 4));
+                            GardenSimulation.plantsAll.push(new GardenSimulation.Plant("seed2", "rgb(0, 200, 0)", this.row, this.column, 20, 4));
                             this.plant = GardenSimulation.plantsAll[GardenSimulation.plantsAll.length - 1];
                             this.empty = false;
                             GardenSimulation.Player.money--;
@@ -38,7 +38,7 @@ var GardenSimulation;
                     case GardenSimulation.TASK.PLANTSEED3:
                         if (this.empty == true && GardenSimulation.Player.money > 0) {
                             console.log("seed 3");
-                            GardenSimulation.plantsAll.push(new GardenSimulation.Plant("seed3", "rgb(00, 150, 00)", this.row, this.column, 30, 3));
+                            GardenSimulation.plantsAll.push(new GardenSimulation.Plant("seed3", "rgb(0, 150, 0)", this.row, this.column, 30, 3));
                             this.plant = GardenSimulation.plantsAll[GardenSimulation.plantsAll.length - 1];
                             this.empty = false;
                             GardenSimulation.Player.money--;
@@ -62,7 +62,7 @@ var GardenSimulation;
                     case GardenSimulation.TASK.PLANTSEED5:
                         if (this.empty == true && GardenSimulation.Player.money > 0) {
                             console.log("seed 5");
-                            GardenSimulation.plantsAll.push(new GardenSimulation.Plant("seed5", "rgb(00, 50, 00)", this.row, this.column, 15, 1));
+                            GardenSimulation.plantsAll.push(new GardenSimulation.Plant("seed5", "rgb(0, 50, 0)", this.row, this.column, 15, 1));
                             this.plant = GardenSimulation.plantsAll[GardenSimulation.plantsAll.length - 1];
                             this.empty = false;
                             GardenSimulation.Player.money--;
@@ -77,7 +77,7 @@ var GardenSimulation;
                             GardenSimulation.plantsAll.splice(GardenSimulation.plantsAll.findIndex((e) => e == this.plant), 1);
                             this.empty = true;
                             this.plant.price = 3;
-                            if (this.plant.age == this.plant.finalAge) {
+                            if (this.plant.age == this.plant.maxAge) {
                                 GardenSimulation.Player.money = GardenSimulation.Player.money + this.plant.price;
                             }
                         }

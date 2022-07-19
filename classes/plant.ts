@@ -34,7 +34,7 @@ namespace GardenSimulation {
             if (randomWater == 0) {
                 this.waterrequired = true;
                 if (this.bugs.length == 0) {
-                this.currentcolour = "black";
+                this.currentcolour = "rgb(0, 0, 0)";
                 }
             }
         }
@@ -42,7 +42,7 @@ namespace GardenSimulation {
         getsBug(): void {
             let randomBug: number = Math.round(Math.random() * 20);
             if (randomBug == 0) {
-                this.currentcolour = "red";
+                this.currentcolour = "rgb(255, 0, 0)";
                 this.bugs.push(new Bug());
             }
         }
