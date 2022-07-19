@@ -1,0 +1,64 @@
+body, html {
+    margin: 0px;
+    height: 100%;
+    background-color: rgb(192, 223, 144);
+    overflow: hidden;
+}
+
+main{
+    text-align: center;
+}
+
+form {
+    margin: auto;
+    width: 500px;
+    height: 200px;
+}
+
+form p {
+    font-style: italic;
+    margin-top: 0px;
+}
+
+form button {
+    text-align: center;
+}
+
+header {
+    text-align: center;
+}
+
+canvas {
+    margin-left: 200px;
+}
+
+#settings {
+    position:relative;
+}
+
+#shop {
+    position: absolute;
+    background-color: rgb(255, 255, 238);
+    top: 250px;
+    right: 50px;
+    width: 300px;
+    height: 550px;
+}
+
+#prices {
+    position: absolute;
+    background-color: rgb(255, 255, 238);
+    top: 550px;
+    right: 1485px;
+    width: 150px;
+    height: 175px;
+}
+
+#inventory {
+    position: absolute;
+    background-color: rgb(255, 255, 238);
+    top: 250px;
+    right: 1485px;
+    width: 150px;
+    height: 267px;
+}
